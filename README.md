@@ -51,6 +51,16 @@ mvn clean package
 java -jar {arquivo buildado aqui}
 ```
 
+### Para rodar os testes
+Também recomendo rodar os testes pelo IntelliJ, mas a linha de comando para rodar usando o `junit-platform-console-standalone` é
+```
+java -jar junit-platform-console-standalone-<version>.jar <Options>
+```
+Para rodar usando maven é
+```
+mvn clean test
+``
+
 ### Também temos as imagens no DockerHub
 - [guiraldelli/deliver-bills-app:latest](https://hub.docker.com/repository/docker/guiraldelli/deliver-bills-app/general)
 - [guiraldelli/deliver-bills-server:latest](https://hub.docker.com/repository/docker/guiraldelli/deliver-bills-server/general)
