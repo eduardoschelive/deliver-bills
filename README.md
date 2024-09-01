@@ -47,6 +47,10 @@ npm run dev
 O backend precisa de Java 21 para funcionar, depois de instalado, você pode apenas abrir o IntelliJ e clicar para rodar a main. Ou se quiser ir pelo caminho mais difícil:
 
 ```
+mvn clean compile exec:java
+```
+ou
+```
 mvn clean package
 java -jar {arquivo buildado aqui}
 ```
