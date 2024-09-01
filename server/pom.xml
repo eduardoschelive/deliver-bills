@@ -28,6 +28,7 @@
     </scm>
     <properties>
         <java.version>21</java.version>
+        <exec.mainClass>com.eduardoschelive.deliverbills.DeliverBillsApplication</exec.mainClass>
     </properties>
     <dependencies>
         <dependency>
