@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: deliver-bills
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+    driverClassName: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 3
+      idle-timeout: 100 # ms
+      connection-timeout: 10000 # 10s
+      max-lifetime: 120000 # 2m
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+
+logging:
+  config: classpath:log4j2.xml

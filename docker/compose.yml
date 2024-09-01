@@ -1,0 +1,16 @@
+name:  "deliver-bills"
+
+services:
+  deliver-bills-server:
+    image: "guiraldelli/deliver-bills-server:latest"
+    ports:
+      - "6902:8080"
+    volumes:
+      - "./logs:/var/log"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    env_file: server.env
+  deliver-bills-app:
+    image: "guiraldelli/deliver-bills-app:latest"
+    ports:
+      - "3002:3000"

@@ -1,0 +1,26 @@
+{
+  "plugins": [
+    "prettier",
+    "@tanstack/eslint-plugin-query"
+  ],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@tanstack/eslint-plugin-query/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
+    "prettier/prettier": ["warn",
+      {
+        "singleQuote": true,
+        "semi": false,
+        "trailingComma": "es5",
+        "printWidth": 80,
+        "tabWidth": 2,
+        "useTabs": false,
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}
