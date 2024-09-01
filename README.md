@@ -59,7 +59,7 @@ java -jar junit-platform-console-standalone-<version>.jar <Options>
 Para rodar usando maven é
 ```
 mvn clean test
-``
+```
 
 ### Também temos as imagens no DockerHub
 - [guiraldelli/deliver-bills-app:latest](https://hub.docker.com/repository/docker/guiraldelli/deliver-bills-app/general)
