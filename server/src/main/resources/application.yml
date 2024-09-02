@@ -2,9 +2,9 @@ spring:
   application:
     name: deliver-bills
   datasource:
-    url: ${DATABASE_URL}
-    username: ${DATABASE_USERNAME}
-    password: ${DATABASE_PASSWORD}
+    url: jdbc:postgresql://89.116.73.41:6969/deliver-bills
+    username: postgres
+    password: WiN6MjcjVsOnMnZZJGZeajc7cDcl
     driverClassName: org.postgresql.Driver
     hikari:
       maximum-pool-size: 10

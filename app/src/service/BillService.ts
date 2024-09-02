@@ -27,7 +27,7 @@ const getBills = async (
     [`${sort.column}_sort`]: sort.direction,
   }
 
-  const description = nameFilter ? { name_lk: nameFilter } : {}
+  const description = nameFilter ? { ['name_lk-i']: nameFilter } : {}
 
   const response = await http.get(ENDPOINT, {
     params: {
@@ -41,13 +41,13 @@ const getBills = async (
   return response
 }
 
-export const removeBill = async (uuid: string): Promise<AxiosResponse<void>> => {
+export const removeBill = async (
+  uuid: string
+): Promise<AxiosResponse<void>> => {
   return await http.delete(`${ENDPOINT}/${uuid}`)
 }
 
-export const updateBill = async (
-  bill: Bill
-): Promise<AxiosResponse<void>> => {
+export const updateBill = async (bill: Bill): Promise<AxiosResponse<void>> => {
   return await http.put(`${ENDPOINT}/${bill.uuid}`, bill)
 }
 

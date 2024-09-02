@@ -138,6 +138,11 @@ export default function Home() {
     await upsertBill(bill)
   }
 
+  const handleFilter = (value: string) => {
+    setFilter(value)
+    handlePage(1)
+  }
+
   return (
     <>
       <UpsertBillModal
@@ -156,7 +161,7 @@ export default function Home() {
                 placeholder="Filtrar por nome"
                 variant="bordered"
                 value={filter}
-                onValueChange={setFilter}
+                onValueChange={handleFilter}
               />
               <ColumnsSelector
                 columns={COLUMNS}
