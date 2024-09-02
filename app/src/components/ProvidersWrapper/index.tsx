@@ -7,7 +7,9 @@ export function ProvidersWrapper({ children }: PropsWithChildren) {
   return (
     <QueryProvider>
       <UIProvider>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider attribute="class" enableSystem={false}>
+          {children}
+        </ThemeProvider>
       </UIProvider>
     </QueryProvider>
   )

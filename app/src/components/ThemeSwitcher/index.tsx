@@ -13,6 +13,8 @@ export const ThemeSwitcher = () => {
 
   if (!mounted) return null
 
+  console.log(theme)
+
   return (
     <Switch
       defaultSelected
