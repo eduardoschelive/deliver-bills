@@ -54,6 +54,7 @@ ou
 mvn clean package
 java -jar {arquivo buildado aqui}
 ```
+Atenção: Crie um diretório /var/log/deliver-bills para que a aplicação grave os logs, caso contrário ela só irá logar no console e haverá um erro na hora que aplicação subir, pode ignorar caso não queira criar o diretório
 
 ### Para rodar os testes
 Também recomendo rodar os testes pelo IntelliJ, mas a linha de comando para rodar usando o `junit-platform-console-standalone` é
