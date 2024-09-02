@@ -19,6 +19,9 @@ Para rodar esse projeto, você irá precisar das seguintes variáveis de ambient
 ```
 Aponte ` NEXT_PUBLIC_API_URL` para o url em que o servidor estará hospedado
 
+- Banco
+Crie um banco no postgres para a aplicação.
+
 - Backend
 ```
 DATABASE_URL
